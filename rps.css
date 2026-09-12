@@ -68,7 +68,7 @@ img{
      background-color:#081b31;
      display:inline;
      color:white;
-     /* border:5px solid #081b31; */
+     border:5px solid #081b31;
      border-radius:10px;
      padding:5px;
 }
