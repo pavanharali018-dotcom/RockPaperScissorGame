@@ -4,9 +4,13 @@ A simple browser-based Rock Paper Scissors game built with **HTML, CSS, and Java
 
 ## Preview
 
-![Rock Paper Scissors Game Preview](./preview.png)
+![Rock Paper Scissors Game Preview](page1.png)
+![Rock Paper Scissors Game Preview](page2.png)
+![Rock Paper Scissors Game Preview](page3.png)
+![Rock Paper Scissors Game Preview](page4.png)
 
-> Replace `preview.png` above with an actual screenshot of your game (drag your screenshot into the same folder as this README and rename it `preview.png`, or update the path).
+
+
 
 ## Features
 
