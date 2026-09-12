@@ -5,7 +5,7 @@
 }
 h1{
     color:white;
-    background-color:#08130b;
+    background-color:#081b31;
     height:100px;
     line-height:100px;
     
@@ -31,7 +31,7 @@ img{
 }
 .choice:hover{
     cursor:pointer;
-    background-color:#08130b;
+    background-color:#081b31;
 
 }
 .choices{
@@ -60,14 +60,15 @@ img{
     font-size:70px;
 }
 .msg-container{
-    margin-top:50px;
+    margin-top:60px;
    
 }
 #msg{
      font-size:30px;
-     background-color:#08130b;
+     background-color:#081b31;
      display:inline;
      color:white;
-     border:5px solid #08130b;
+     border:5px solid #081b31;
      border-radius:10px;
+     padding:5px;
 }
