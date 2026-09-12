@@ -3,11 +3,12 @@
 A simple browser-based Rock Paper Scissors game built with **HTML, CSS, and JavaScript**, made while following the Apna College JavaScript course.
 
 ## Preview
+![Rock Paper Scissors Game Preview](assets/page1.png)
+![Rock Paper Scissors Game Preview](assets/page2.png)
+![Rock Paper Scissors Game Preview](assets/page3.png)
+![Rock Paper Scissors Game Preview](assets/page4.png)
 
-![Rock Paper Scissors Game Preview](page1.png)
-![Rock Paper Scissors Game Preview](page2.png)
-![Rock Paper Scissors Game Preview](page3.png)
-![Rock Paper Scissors Game Preview](page4.png)
+
 
 
 
