@@ -1,13 +1,29 @@
 let userScore=0;
 let compScore=0;
 let choices=document.querySelectorAll(".choice");
+let UserScore=document.querySelector("#user-score");
+let CompScore=document.querySelector("#comp-score");
 
 const genCompChoice=()=>{
-   let options=["Rock","Paper","Scissor"];
+   let options=["rock","paper","scissor"];
    let randIdx=Math.floor(Math.random()*3);
    return options[randIdx];
 
 }
+const drawGame=()=>{
+    console.log("Game is drawn");
+    
+};
+//showing winner
+    const showWinner=(userWin)=>{
+        if(userWin){
+            console.log("You won")
+        }
+        else{
+            console.log("computer won")
+        }
+    };
+
 
 
 
@@ -15,6 +31,31 @@ const playGame=(userChoice)=>{
     console.log(`You chose:${userChoice}`);
     //generate comp choice
     const compChoice=genCompChoice();
+    console.log(`Comp chose:${compChoice}`);
+    
+    // checking draw condition.
+    if(userChoice === compChoice){
+         drawGame();
+
+    }
+
+
+    else{let userWin=true;
+    if(userChoice==="rock"){
+        //scissor or paper
+        userWin = compChoice==="paper"? false:true;
+    }
+    else if(userChoice==="paper"){
+        //either rock or scissor
+        userWin = compChoice==="scissor"? false:true;
+    }
+    else{
+        //either rock or paper
+        userWin = compChoice==="rock"? false:true;
+    }
+    
+   
+    showWinner(userWin);}
 }
 
 
@@ -30,4 +71,8 @@ choices.forEach((choice)=>{
 
 
 });
+
+const checkwinner=()=>{
+   
+}
 
