@@ -18,15 +18,15 @@ const drawGame=()=>{
     
 };
 //showing winner
-    const showWinner=(userWin)=>{
+    const showWinner=(userWin,userChoice,compChoice)=>{
         if(userWin){
             console.log("You won");
-            msg.innerText="You won!";
+            msg.innerText=`You Win!,Your ${userChoice} beats ${compChoice}`;
             msg.style.backgroundColor="Green";
         }
         else{
             console.log("computer won");
-            msg.innerText="You Lose!";
+            msg.innerText=`You lost!,Computer's ${compChoice} beats your ${userChoice}`;
             msg.style.backgroundColor="Red";
         }
     };
@@ -62,7 +62,7 @@ const playGame=(userChoice)=>{
     }
     
    
-    showWinner(userWin);}
+    showWinner(userWin,userChoice,compChoice);}
 }
 
 
