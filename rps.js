@@ -12,7 +12,7 @@ const genCompChoice=()=>{
 
 }
 const drawGame=()=>{
-    console.log("Game is drawn");
+
     msg.innerText="Game Drawn,Play Again";
     msg.style.backgroundColor="#081b31";
     
@@ -21,13 +21,13 @@ const drawGame=()=>{
     const showWinner=(userWin,userChoice,compChoice)=>{
         if(userWin){
             userScore++;
-            UserScorepara.innerText="userScore";
+            UserScorepara.innerText=userScore;
             msg.innerText=`You Win!,Your ${userChoice} beats ${compChoice}`;
             msg.style.backgroundColor="Green";
         }
         else{
             compScore++;
-            CompScorepara.innerText="compScore";
+            CompScorepara.innerText=compScore;
             msg.innerText=`You lost!,Computer's ${compChoice} beats your ${userChoice}`;
             msg.style.backgroundColor="Red";
         }
@@ -84,4 +84,3 @@ choices.forEach((choice)=>{
 const checkwinner=()=>{
    
 }
-
