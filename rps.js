@@ -3,6 +3,7 @@ let compScore=0;
 let choices=document.querySelectorAll(".choice");
 let UserScore=document.querySelector("#user-score");
 let CompScore=document.querySelector("#comp-score");
+let msg = document.querySelector("#msg");
 
 const genCompChoice=()=>{
    let options=["rock","paper","scissor"];
@@ -12,15 +13,21 @@ const genCompChoice=()=>{
 }
 const drawGame=()=>{
     console.log("Game is drawn");
+    msg.innerText="Game Drawn,Play Again";
+    msg.style.backgroundColor="#081b31";
     
 };
 //showing winner
     const showWinner=(userWin)=>{
         if(userWin){
-            console.log("You won")
+            console.log("You won");
+            msg.innerText="You won!";
+            msg.style.backgroundColor="Green";
         }
         else{
-            console.log("computer won")
+            console.log("computer won");
+            msg.innerText="You Lose!";
+            msg.style.backgroundColor="Red";
         }
     };
 
