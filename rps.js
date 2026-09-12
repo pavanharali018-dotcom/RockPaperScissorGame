@@ -1,8 +1,8 @@
 let userScore=0;
 let compScore=0;
 let choices=document.querySelectorAll(".choice");
-let UserScore=document.querySelector("#user-score");
-let CompScore=document.querySelector("#comp-score");
+let UserScorepara=document.querySelector("#user-score");
+let CompScorepara=document.querySelector("#comp-score");
 let msg = document.querySelector("#msg");
 
 const genCompChoice=()=>{
@@ -20,12 +20,14 @@ const drawGame=()=>{
 //showing winner
     const showWinner=(userWin,userChoice,compChoice)=>{
         if(userWin){
-            console.log("You won");
+            userScore++;
+            UserScorepara.innerText="userScore";
             msg.innerText=`You Win!,Your ${userChoice} beats ${compChoice}`;
             msg.style.backgroundColor="Green";
         }
         else{
-            console.log("computer won");
+            compScore++;
+            CompScorepara.innerText="compScore";
             msg.innerText=`You lost!,Computer's ${compChoice} beats your ${userChoice}`;
             msg.style.backgroundColor="Red";
         }
